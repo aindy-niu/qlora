@@ -21,6 +21,7 @@ pip install -r requirements.txt
 ```
 ## 3. 准备训练数据
 可以使用本项目data目录下openassistant_best_replies_train.jsonl 作为训练数据  
+如有需要，可以依据此文件格式修改自己的数据文件。  
 ## 4. 修改训练参数
 下面是一个训练基于llama-7b的基础模型的Finetuning脚本，请注意修改--model_name_or_path 和--dataset 为当前运行环境相关地址。  
 ```

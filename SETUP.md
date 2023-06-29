@@ -25,7 +25,7 @@ pip install -r requirements.txt
 下面是一个训练基于llama-7b的基础模型的Finetuning脚本，请注意修改--model_name_or_path 和--dataset 为当前运行环境相关地址。  
 ```
 python qlora.py \
-    --model_name_or_path /your/path/base_model/llama-7b \
+    --model_name_or_path huggyllama/llama-7b \
     --output_dir ./output/guanaco-chinese \
     --logging_steps 10 \
     --save_strategy steps \
@@ -54,7 +54,7 @@ python qlora.py \
     --warmup_ratio 0.03 \
     --lr_scheduler_type constant \
     --gradient_checkpointing \
-    --dataset /your/path/qlora/data/guanaco_chinese/guanaco_chinese.jsonl \
+    --dataset /your/path/qlora/data/openassistant_best_replies_train.jsonl \
     --dataset_format oasst1 \
     --source_max_len 16 \
     --target_max_len 512 \
